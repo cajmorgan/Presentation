@@ -105,6 +105,7 @@ function slideThree() {
 
 function slideFour() {
     document.querySelector('.slideThree').style.opacity = "0";
+    document.querySelector('.slideThree').style.display = "none";
     document.querySelector('.slideFour').style.opacity = "1";
     const whyme = document.querySelectorAll('.whyme');
     let i = 0;
@@ -117,7 +118,7 @@ function slideFour() {
     }, 300)
 }
 function theEnd() {
-    document.querySelector('.slideFour').style.opacity = "0";
+    document.querySelector('.slideFour').style.display = "none";
     document.querySelector('.theEnd').style.opacity = "1";
     let color = function() {
         let value = Math.floor(Math.random() * (10 - 1) + 1);

@@ -102,6 +102,7 @@ body {
   position: absolute;
   opacity: 0;
   transition-duration: 1s;
+  z-index: 10;
 }
 
 .projects img {
@@ -109,10 +110,14 @@ body {
   height: 20%;
   border-radius: 10%;
   transition-duration: 1s;
-  margin: 10px;
+  margin: 20px;
 }
 .projects img:hover {
   transform: scale(1.05);
+}
+
+.projects a {
+  z-index: 10;
 }
 
 .projImg {
