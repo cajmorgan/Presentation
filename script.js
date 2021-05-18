@@ -112,7 +112,7 @@ function slideFour() {
     const popper = setInterval(() => {
         whyme[i].style.opacity = "1";
         i++;
-        if(i === 4) {
+        if(i === 5) {
             clearInterval(popper);
         }
     }, 300)
