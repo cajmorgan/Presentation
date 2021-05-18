@@ -1,0 +1,104 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  background-color: black;
+  color: white;
+  font-family: Monaco;
+  justify-content: center;
+  align-content: center;
+}
+
+.slideOne {
+  display: none;
+  position: absolute;
+  text-align: left;
+  padding: 10px;
+  align-self: center;
+  /* background-color: white; */
+  transition-duration: 1s;
+}
+.profilePic {
+  position: relative;
+  left: 120px;
+  margin: 50px;
+  border-radius: 50%;
+  opacity: 0;
+  transition-duration: 1s;
+}
+
+/* slideOne Typewriter */
+
+/* .var-highlight {
+  color: #c0ad60;
+}
+.string-highlight {
+  color: rgba(253, 149, 90, 0.8);
+} */
+
+#typewriter {
+  font-size: 2em;
+  margin: 0;
+  font-family: "Courier New";
+}
+
+#typewriter:after {
+  content: "|";
+  animation: blink 500ms linear infinite alternate;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* slideTwo */
+.slideTwo {
+  text-align: center;
+  align-self: center;
+  position: absolute;
+  opacity: 0;
+  transition-duration: 1s;
+}
+.slideTwo ul {
+  font-size: 20px;
+  text-align: left;
+}
+.current {
+  transition-duration: 1s;
+  opacity: 0;
+}
+
+/* slideThree */
+.slideThree {
+  text-align: center;
+  align-self: center;
+  position: absolute;
+  opacity: 1;
+  transition-duration: 1s;
+}
