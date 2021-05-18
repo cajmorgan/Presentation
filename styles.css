@@ -10,6 +10,7 @@ body {
   font-family: Monaco;
   justify-content: center;
   align-content: center;
+  transition-duration: 1s;
 }
 
 .slideOne {
@@ -99,6 +100,53 @@ body {
   text-align: center;
   align-self: center;
   position: absolute;
-  opacity: 1;
+  opacity: 0;
   transition-duration: 1s;
+}
+
+.projects img {
+  width: 20%;
+  height: 20%;
+  border-radius: 10%;
+  transition-duration: 1s;
+  margin: 10px;
+}
+.projects img:hover {
+  transform: scale(1.05);
+}
+
+.projImg {
+  opacity: 0;
+}
+
+/* slideFour */
+.slideFour {
+  text-align: center;
+  align-self: center;
+  position: absolute;
+  opacity: 0;
+  transition-duration: 1s;
+}
+.slideFour ul {
+  font-size: 20px;
+  text-align: left;
+}
+.whyme {
+  transition-duration: 1s;
+  opacity: 0;
+}
+.clickme {
+  justify-self: center;
+  text-align: center;
+  padding: 20px 50px;
+  font-size: 20px;
+  border-radius: 0;
+  outline: none;
+}
+
+/* THE END */
+.theEnd {
+  align-self: center;
+  font-size: 100px;
+  opacity: 0;
 }

@@ -76,7 +76,7 @@ function slideOne() {
 }
 
 function slideTwo() {
-    document.querySelector('.slideOne').style.opacity= "0";
+    document.querySelector('.slideOne').style.opacity = "0";
     document.querySelector('.slideTwo').style.opacity = "1";
     const current = document.querySelectorAll('.current');
     let i = 0;
@@ -88,3 +88,74 @@ function slideTwo() {
         }
     }, 300)
 }
+
+function slideThree() {
+    document.querySelector('.slideTwo').style.opacity = "0";
+    document.querySelector('.slideThree').style.opacity = "1";
+    const current = document.querySelectorAll('.projImg');
+    let i = 0;
+    const popper = setInterval(() => {
+        current[i].style.opacity = "1";
+        i++;
+        if(i === 4) {
+            clearInterval(popper);
+        }
+    }, 300)
+}
+
+function slideFour() {
+    document.querySelector('.slideThree').style.opacity = "0";
+    document.querySelector('.slideFour').style.opacity = "1";
+    const whyme = document.querySelectorAll('.whyme');
+    let i = 0;
+    const popper = setInterval(() => {
+        whyme[i].style.opacity = "1";
+        i++;
+        if(i === 4) {
+            clearInterval(popper);
+        }
+    }, 300)
+}
+function theEnd() {
+    document.querySelector('.slideFour').style.opacity = "0";
+    document.querySelector('.theEnd').style.opacity = "1";
+    let color = function() {
+        let value = Math.floor(Math.random() * (10 - 1) + 1);
+        if(value === 1) {
+            return "red";
+        } else if (value === 2) {
+            return "green";
+        }
+        else if (value === 3) {
+            return "blue";
+        }
+        else if (value === 4) {
+            return "orange";
+        }
+        else if (value === 5) {
+            return "yellow";
+        }
+        else if (value === 6) {
+            return "white";
+        }
+        else if (value === 7) {
+            return "cyan";
+        }
+        else if (value === 8) {
+            return "pink";
+        }
+        else if (value === 9) {
+            return "purple";
+        }
+        else if (value === 10) {
+            return "brown";
+    }
+    }
+    
+    const colorChanger = setInterval(() => {
+        document.querySelector('body').style.color = `${color()}`;
+    }, 300)
+
+}
+const button = document.querySelector('.clickme');
+button.addEventListener('click', theEnd);
